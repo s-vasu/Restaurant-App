@@ -1,0 +1,21 @@
+main{
+    display: flex;
+
+}
+#tables{
+    padding:2%;
+    flex:1;
+    border:2px solid black;
+    height:100vh
+}
+#menu{
+    flex:2.5;
+    flex-shrink: 1;
+    padding:2%;
+    border:2px solid black;
+    height:100vh;
+}
+.searchbar.menu{
+    width:60%;
+    min-width: 200px;
+}
