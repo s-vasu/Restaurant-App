@@ -1,21 +1,173 @@
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body{
+    height:100vh;
+    overflow: scroll;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* transition: all 500s ease 2s; */
+    background-color: #292929;
+    /* background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); */
+    
+    /* background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #b453a0 84%, #5e5a72 100%); */
+    
+    /* background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%); */
+    /* background-image: linear-gradient(to right, #16191c 0%, #79a7cd 100%); */
+    /* background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%); */
+    /* background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
+background-image: url(images/bg2.jpg);
+background-size: cover;
+
+    padding: 0;
+    margin: 0;
+}
 main{
     display: flex;
-
+    
+}
+nav{
+    /* background-color: #6eb9e144; */
+    margin: 0.5% 2%;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.45);
+    /* border:2px solid black; */
+    border-radius: 8px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+#title{
+    text-align: center;
+    color: aliceblue;
+    
 }
 #tables{
+
+    background-color: rgba(0, 0, 0, 0.45);
+    /* border:2px solid black; */
+    border-radius: 8px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding:0.3em;
     padding:2%;
+    margin:2%;
     flex:1;
-    border:2px solid black;
-    height:100vh
+   
+    /* height:100%; */
+    
+}
+.infodiv{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
 #menu{
+    background-color: rgba(0, 0, 0, 0.6);
+    /* border:2px solid black; */
+    border-radius: 8px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding:0.3em;
+    /* background-color: #d6e6f2a2; */
     flex:2.5;
     flex-shrink: 1;
     padding:2%;
-    border:2px solid black;
-    height:100vh;
+    margin:2%;
+    height:82vh;
+    overflow-y: scroll;
 }
 .searchbar.menu{
     width:60%;
     min-width: 200px;
 }
+.table{
+    background-color: rgba(255,255,255,0.45);
+    /* border:2px solid black; */
+    border-radius: 8px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding:0.3em;
+    margin:1em 0;
+    cursor:pointer;
+}
+.table:hover{
+    /* background-color: rgba(128, 128, 128, 0.671); */
+    transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.items{
+    background-color: rgba(255,255,255,0.45);
+    border:0;
+    border-radius: 8px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+    padding:0.3em;
+    margin:1em 0;
+}
+.items:hover{
+    /* background-color: rgba(128, 128, 128, 0.671);  */
+    transform: translateY(5px);
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+input[type='search']{
+    background-color: rgba(255, 255, 255, 0.879);
+    border:0;
+    border-radius: 4px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    color: snow;
+    padding: 4px;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+
+
+
+
+
+.menu-popup {
+    /* Styling for the menu popup */
+    /* display: none; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    padding: 20px;
+    /* border: 1px solid black; */
+    background-color: rgba(255,255,255,1);
+    /* border:2px solid black; */
+    border-radius: 8px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding:0.3em;
+
+}
+
+.table-details-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    padding: 20px;
+    background-color: rgba(255,255,255,1);
+    /* border:2px solid black; */
+    border-radius: 8px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding:0.3em;
+}
+
+@media (max-width: 768px) {
+    main {
+      flex-direction: column; /* Switch to column on mobile devices */
+    }
+  }
